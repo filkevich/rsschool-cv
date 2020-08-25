@@ -21,8 +21,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -71,12 +71,12 @@ h1 {
 /* ===== STRUCTURE ===== */
 
 body {
-  background-color: #24252a;
+  background-color: #111;
 }
 
 .all_wrapper {
   margin: 0 auto;
-  width: 1024px;
+  max-width: 1024px;
 }
 
 /* ===== HEADER ===== */
@@ -86,10 +86,6 @@ body {
   justify-content: space-between;
   height: 80px;
   padding: 45px 35px 0 35px;
-}
-
-a {
-  color: #878787;
 }
 
 .logo {
@@ -105,6 +101,10 @@ a {
   color: #fff;
 }
 
+.contacts li a {
+  color: #878787;
+}
+
 .contacts li a:hover {
   color: #fff;
 }
@@ -112,17 +112,24 @@ a {
 /* ===== END HEADER ===== */
 /* ===== FIRST BLOCK ===== */
 
+.top-page-box {
+  height: 390px;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-bottom: 60px;
+}
+
 .photo {
   position: relative;
-  top: -100px;
-  left: 75px;
-  width: 540px;
+  top: -60px;
+  left: 90px;
+  width: 400px;
   z-index: 1;
 }
 
 .top-page-box p {
   position: relative;
-  top: 320px;
+  top: 200px;
   right: 80px;
   float: right;
   width: 370px;
@@ -146,3 +153,7 @@ h1 span {
 }
 
 /* ===== END FIRST BLOCK ===== */
+
+/* ===== TRANSITIONS ===== */
+
+/* ===== END TRANSITIONS ===== */
