@@ -53,7 +53,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.wrapper-social-media span {
   font-family: Roboto, sans-serif;
 }
 
@@ -153,7 +154,48 @@ h1 span {
 }
 
 /* ===== END FIRST BLOCK ===== */
+/* ===== SOCIAL MEDIA ===== */
 
+#aside {
+  position: relative;
+  padding-right: 50px;
+  float: right;
+}
+
+.wrapper-social-media {
+  position: fixed;
+  bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20px;
+  height: 200px;
+}
+
+.wrapper-social-media span {
+  writing-mode: vertical-rl;
+  transform: scale(1);
+  color: #fff;
+}
+
+.social-media li a svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.social-media li a svg:hover {
+  fill: #67F3B3;
+}
+
+.dash {
+  width: 2px;
+  background: #fff;
+  height: 40px;
+}
+
+/* ===== END SOCIAL MEDIA ===== */
 /* ===== TRANSITIONS ===== */
 
 @media screen and (max-width: 925px) {
@@ -170,10 +212,6 @@ h1 span {
   .photo {
     left: -75px;
   }
-
-  .top-page-box p {
-    right: 0;
-  }
 }
 
 @media screen and (max-width: 630px) {
@@ -181,17 +219,24 @@ h1 span {
     font-size: 12px;
   }
 
-  .top-page-box p {
-    right: 0;
+  .top-page-box p { 
     width: 230px;
   }
 
   h1 {
     width: 430px;
   }
+
+  .wrapper-social-media {
+    height: 185px;
+  }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 525px) {
+  #aside {
+    padding-right: 35px;
+  }
+
   #header,
   .top-page-box {
     padding: 30px 20px 0 20px;
@@ -217,6 +262,11 @@ h1 span {
 }
 
 @media screen and (max-width: 410px) {
+  h1 {
+    font-size: 1.7em;
+    width: 270px;
+  }
+
   .photo {
     top: 30px;
   }
