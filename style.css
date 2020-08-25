@@ -1,45 +1,74 @@
-/* roboto-regular - latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* roboto-700 - latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* roboto-mono-regular - latin */
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/roboto-mono-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-mono-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* roboto-mono-700 - latin */
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/roboto-mono-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-mono-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* ===== RESET CSS ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+ul,
+ol {
   padding: 0;
+  list-style: none;
 }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== END RESET CSS ===== */
+/* ===== FONTS ===== */
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.logo,
+.contacts li a {
+  font-weight: 400;
+}
+
+/* ===== END FONTS ===== */
+/* ===== STRUCTURE ===== */
 
 body {
   background-color: #24252a;
@@ -55,32 +84,65 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
+  height: 80px;
   padding: 45px 35px 0 35px;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
-  font-family: "Roboto Mono", sans-serif;
-  font-size: 16px;
   color: #878787;
-  text-decoration: none;
 }
 
-.contacts > li > a:hover {
+.logo {
+  position: relative;
+  z-index: 5;
+}
+
+.logo span:first-child {
+  color: #878787;
+}
+
+.logo span:last-child {
   color: #fff;
 }
 
-.logo > span:first-child {
-  font-weight: 700;
-  color: #878787;
-}
-
-.logo > span:last-child {
-  font-weight: 700;
+.contacts li a:hover {
   color: #fff;
 }
 
 /* ===== END HEADER ===== */
+/* ===== FIRST BLOCK ===== */
+
+.photo {
+  position: relative;
+  top: -100px;
+  left: 75px;
+  width: 540px;
+  z-index: 1;
+}
+
+.top-page-box p {
+  position: relative;
+  top: 320px;
+  right: 80px;
+  float: right;
+  width: 370px;
+  color: #d6d6d6;
+}
+
+.top-page-box p span {
+  color: #67F3B3;
+}
+
+h1 {
+  position: relative;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  width: 700px;
+}
+
+h1 span {
+  color: #67F3B3;
+}
+
+/* ===== END FIRST BLOCK ===== */
