@@ -123,6 +123,8 @@ body {
 
 .contacts li a:hover {
   color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #67F3B3;
 }
 
 /* ===== END HEADER ===== */
@@ -269,6 +271,11 @@ h1 span {
     color: #67F3B3;
   }
 
+  .wrapper-item-timeline h4 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+  }
+
   .wrapper-item-timeline h5 {
     position: absolute;
     text-transform: uppercase;
@@ -372,7 +379,7 @@ h1 span {
   }
 
   .top-page-box p {
-    top: 100px;
+    top: 110px;
   }
 
   h1 {
