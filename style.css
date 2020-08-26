@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ul,
 ol,
@@ -229,7 +230,6 @@ h1 span {
     position: relative;
     padding: 60px 50px;
     border-bottom: 2px solid #111;
-    /* border-left: 4px solid #67F3B3; */
     background: rgba(255, 255, 255, 0.03);
     width: 460px;
   }
@@ -269,9 +269,10 @@ h1 span {
     color: #67F3B3;
   }
 
-  h5 {
+  .wrapper-item-timeline h5 {
     position: absolute;
-    top: 38px;
+    text-transform: uppercase;
+    top: 63px;
     left: -190px;
   }
 
@@ -296,11 +297,26 @@ h1 span {
   .top-page-box p {
     right: 20px;
   }
+
+  .wrapper-item-timeline {
+    padding: 30px 30px 30px 40px;
+    width: 340px;
+  }
+
+  .wrapper-item-timeline h5 {
+    top: 33px;
+    left: -180px;
+  }
 }
 
 @media screen and (max-width: 765px) {
   .photo {
     left: -75px;
+  }
+
+  .timeline {
+    position: relative;
+    right: -60px;
   }
 }
 
@@ -319,6 +335,20 @@ h1 span {
 
   .wrapper-social-media {
     height: 185px;
+  }
+
+  .timeline {
+    position: static;
+  }
+
+  .wrapper-item-timeline h4 {
+    padding-bottom: 0px;
+  }
+
+  .wrapper-item-timeline h5 {
+    position: static;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -349,20 +379,49 @@ h1 span {
     font-size: 2em;
     width: 330px;
   }
+
+  .wrapper-item-timeline {
+    padding: 25px 20px 25px 30px;
+    width: 290px;
+  }
 }
 
 @media screen and (max-width: 410px) {
+  .logo {
+    width: 65px;
+  }
+  
   h1 {
-    font-size: 1.7em;
-    width: 270px;
+    font-size: 1.6em;
+    width: 220px;
   }
 
   .photo {
     top: 30px;
   }
 
-  .logo {
-    width: 65px;
+  #experience {
+    padding: 35px 35px;
+  }
+
+  #experience h2 {
+    font-size: 1.5em;
+  }
+
+  .top-page-box p {
+    right: 25px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+  }
+
+  .wrapper-item-timeline h3 {
+    font-size: 1.3em;
+  }
+
+  .wrapper-item-timeline {
+    padding: 25px 20px 25px 30px;
+    width: 240px;
   }
 }
 /* ===== END TRANSITIONS ===== */
