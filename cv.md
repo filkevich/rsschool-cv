@@ -6,6 +6,8 @@
 
 > I have tried several professions related to IT and decided that I definitely would like to go on with front-end.  
 
+### Personal Information
+
 Residence: Grodno, Belarus  
 Email: <artiom.filkevich@gmail.com>  
 Phone: +375297581733  
